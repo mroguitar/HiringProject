@@ -1,0 +1,136 @@
+{% extends 'templates/app.twig' %}
+
+
+{%  block content %}
+
+  <div class="row">
+     <div class="col-md-6">
+        <h4>Select the appropriate category to the right</h4>
+     </div>
+     <div class="col-md-2">
+        
+     </div>
+     <div class="col-md-4">
+		
+     </div>
+ </div>
+ <div class="row">
+    <div class="col-md-6">
+    	<div class="panel panel-default">
+          <div class="panel-heading" id="question">Click Next To Begin</div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        
+    </div>
+    <div class="col-md-4">
+     <!--  <form action="" method="post" autocomplete="off"> -->
+         <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="AgFNR" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="AgFNR">Agriculture, Food & Natural Resources</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="AgC" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="AgC">Architecture & Construction</label>
+		</div>
+	    <!-- Default unchecked -->
+	    <div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="ArtsTC" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="ArtsTC">Arts, A/V Technology & Communications</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="BusMA" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="BusMA">Business Management & Administration</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="ET" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="ET">Education & Training</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Fin" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Fin">Finance</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Gpa" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Gpa">Government & Public Administration</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Hs" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Hs">Health Science</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Ht" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Ht">Hospitality & Tourism</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="HumServ" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="HumServ">Human Services</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="IT" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="IT">Information Technology</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Lpsc" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Lpsc">Law, Public Safety, Corrections & Security</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Man" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Man">Manufacturing</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Mss" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Mss">Marketing, Sales, & Service</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Scem" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Scem">Science, Technology, Engineering & Mathematics</label>
+		</div>
+		 <!-- Default unchecked -->
+		<div class="custom-control custom-radio">
+		  <input type="radio" class="custom-control-input" id="Tdl" name="defaultExampleRadios">
+		  <label class="custom-control-label" for="Tdl">Transportation, Distribution & Logistics</label>
+		</div>
+		<br>
+		<button type="submit" class="btn btn-default" id="next">Next</button>
+		<button type="submit" class="btn btn-default" id="retry">Retry</button>
+     </div>
+       <input type="hidden" id="answer" name="answer" value="">
+       <input type="hidden" id="questionId" name="questionId" value="">
+       <input type="hidden" id="count" name="count" value="">
+       
+       {{ csrf.field | raw }}
+     <!-- </form> -->
+	</div>
+	<div class="row">
+	  <div class="col-md-6" id="showScorePanel">
+        <div class="panel panel-default showScore">
+          <div class="panel-heading" id="showScore"></div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        
+      </div>
+      <div class="col-md-4">
+		
+      </div>
+	</div>
+    
+     
+ 
+    
+{% endblock %}
